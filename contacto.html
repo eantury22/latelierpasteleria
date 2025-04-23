@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contáctanos | L’Atelier Barcelona</title>
+  <link rel="stylesheet" href="css/estilo_index.css" />
+  <link rel="icon" href="img/lablogo3.png" />
+  <style>
+    body {
+      background-image: url('img/fondo_contacto.jpg'); 
+      background-size: cover;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+    }
+
+    .interna-contacto {
+      background-color: rgba(255, 255, 255, 0.94);
+      border-radius: 20px;
+      margin: 120px auto;
+      padding: 60px 30px;
+      max-width: 1000px;
+      box-shadow: 0 0 25px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+  
+
+<body class="contacto">
+
+  <!-- NAVBAR -->
+  <nav>
+    <div id="logo">
+        <a href="index.html"><img src="img/lablogo.png" alt=""></a>
+    </div>
+
+    <img src="img/menu.png" class="icon" onclick="icon()">
+
+    <ul id="lista" class="close">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="#institucional">Nosotros</a></li>
+        <li><a href="carta.html">Carta</a></li>
+        <li><a href="contacto.html">Contáctanos</a></li>
+    </ul>
+</nav>
+
+<script>
+    function icon() {
+        document.getElementById("lista").classList.toggle("close")
+        document.getElementById("lista").classList.toggle("open")
+    }
+</script> 
+
+  <!-- SECCIÓN CONTACTO -->
+  <section class="interna-contacto">
+    <h2>Contáctanos</h2>
+  
+    <div class="contacto-container">
+      <!-- Formulario -->
+      <form class="formulario">
+        <input type="text" placeholder="Nombre completo" required />
+        <input type="email" placeholder="Correo electrónico" required />
+        <textarea placeholder="Escribe tu mensaje..." rows="5" required></textarea>
+        <button type="submit">Enviar mensaje</button>
+      </form>
+  
+      <!-- Información de contacto -->
+      <div class="info-contacto">
+        <p><strong>Dirección:</strong> C. Viladomat, 140 bis · Barcelona</p>
+        <p><strong>Teléfono:</strong> +34 938 287 373</p>
+        <p><strong>Email:</strong> cursos@latelierbarcelona.com</p>
+        <p><strong>WhatsApp:</strong> +34 600 123 456</p>
+  
+        <div class="redes-contacto">
+          <a href="#"><img src="img/redes/facebook2.png" alt="Facebook" /></a>
+          <a href="#"><img src="img/redes/instagram2.png" alt="Instagram" /></a>
+          <a href="#"><img src="img/redes/youtube2.png" alt="YouTube" /></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  
+<footer class="footer">
+    <div class="footer-container">
+        <!-- Logo -->
+        <div class="footer-logo">
+            <img src="img/lablogo.png" alt="Logo L’Atelier">
+        </div>
+
+        <!-- Menú de navegación -->
+        <div class="footer-menu">
+          <ul>
+              <li><a href="index.html">Inicio</a></li>
+              <li><a href="#novedades">Nosotros</a></li>
+              <li><a href="#institucional">Misión</a></li>
+              <li><a href="#institucional">Visión</a></li>
+              <li><a href="#institucional">Características</a></li>
+              <li><a href="carta.html">Productos</a></li>
+              <li><a href="contacto.html">Contáctanos</a></li>
+          </ul>
+      </div>
+
+        <!-- Redes sociales -->
+        <div class="footer-social">
+            <a href="#" target="_blank" aria-label="Facebook">
+                <img src="img/redes/facebook.png" alt="Facebook">
+            </a>
+            <a href="#" target="_blank" aria-label="Instagram">
+                <img src="img/redes/instagram.png" alt="Instagram">
+            </a>
+            <a href="#" target="_blank" aria-label="YouTube">
+                <img src="img/redes/youtube.png" alt="YouTube">
+            </a>
+        </div>
+    </div>
+
+    <div class="footer-copy">
+        <p>© 2025 <strong>L’Atelier Barcelona</strong> | Diseñado por Elith Antury</p>
+    </div>
+</footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const nav = document.getElementById('navLinks');
+      const burger = document.getElementById('hamburger');
+      const links = document.querySelectorAll('.nav-links a');
+  
+      // Cambia entre ☰ y ✖
+      function updateBurgerIcon() {
+        burger.textContent = nav.classList.contains('active') ? '✖' : '☰';
+      }
+  
+      // Abrir/cerrar menú
+      burger.addEventListener('click', () => {
+        nav.classList.toggle('active');
+        updateBurgerIcon();
+      });
+  
+      // Cerrar menú al hacer clic en una opción
+      links.forEach(link => {
+        link.addEventListener('click', () => {
+          nav.classList.remove('active');
+          updateBurgerIcon();
+        });
+      });
+    });
+  </script>  
+
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('navLinks');
+    const links = navLinks.querySelectorAll('a');
+
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+      hamburger.textContent = navLinks.classList.contains('active') ? '✖' : '☰';
+    });
+
+    links.forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('active');
+        hamburger.textContent = '☰';
+      });
+    });
+  });
+</script>
+
+</body>
+</html>

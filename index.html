@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L'Atelier Barcelona | Escuela de Repostería</title>
+
+    <!--metas de SEO-->
+    <meta name="author" content="Elith Antury">
+    <meta name="keywords" content="pasteleria, reposteria, postres">
+    <meta name="description" content="escuela de repostería y pastelería con degustación, una fórmula perfecta que combina la creatividad">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--estilos-->
+    <link rel="stylesheet" href="css/estilo_index.css">
+    <link rel="stylesheet" href="css/slider.css">
+
+    <!--favincon-->
+    <link rel="icon" href="img/lablogo3.png">
+</head>
+
+<body>
+    
+   <nav>
+        <div id="logo">
+            <a href="#inicio"><img src="img/lablogo.png" alt=""></a>
+        </div>
+
+        <img src="img/menu.png" class="icon" onclick="icon()">
+
+        <ul id="lista" class="close">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="#institucional">Nosotros</a></li>
+            <li><a href="carta.html">Carta</a></li>
+            <li><a href="contacto.html">Contáctanos</a></li>
+        </ul>
+    </nav>
+
+    <script>
+        function icon() {
+            document.getElementById("lista").classList.toggle("close")
+            document.getElementById("lista").classList.toggle("open")
+        }
+    </script> 
+       
+
+<header id="inicio" class="hero-slider">
+    <div class="slide active" style="background-image: url('img/bglb.jpg');">
+        <div class="contenido">
+            <h1>Bienvenidos a L’Atelier</h1>
+            <p>Donde la repostería se transforma en arte, sabor y experiencias inolvidables.</p>
+            <a href="#menu" class="cta">Descubre el Menú</a>
+        </div>
+    </div>
+
+    <div class="slide" style="background-image: url('img/bglb2.webp');">
+        <div class="contenido">
+            <h1>Aprende de los Mejores</h1>
+            <p>Masterclass con chefs de renombre internacional, solo en Barcelona.</p>
+            <a href="#equipo" class="cta">Conoce al equipo</a>
+        </div>
+    </div>
+
+    <div class="slide" style="background-image: url('img/bglb3.jpg');">
+        <div class="contenido">
+            <h1>Arte, Técnica y Sabor</h1>
+            <p>Fusionamos tradición francesa con diseño y creatividad.</p>
+            <a href="#novedades" class="cta">Explora nuestras novedades</a>
+        </div>
+    </div>
+
+    <div class="controles">
+        <span class="prev">&#10094;</span>
+        <span class="next">&#10095;</span>
+    </div>
+</header>
+
+    <!----novedades--->
+
+    <section id="novedades">
+        <p class="pildora">escuela y pastelería</p>
+        <div class="contenedor2">
+            <article>
+                <h2>Nosotros</h2>
+                <div class="logo1"><img src="img/lablogo.png" alt=""></div>
+                <p>L’Atelier Barcelona, escuela y obrador de pastelería de vanguardia. Después de cuatro años de su fundación, brilla con estrella propia:
+                    se ubica como una de las pastelerías más importantes del país gracias a su propuesta vanguardista. Ha ganado diversos premios: mejor pasta de té artesana de España, mejor coca de Sant Joan y mejor panettone de chocolate. En 2023, abre una nueva tienda en carrer del Doctor Fleming 16 como prueba de su compromiso con su clientela.</p>
+            </article>
+
+            <div class="imgs">
+                <div class="img1 nor i1"><img src="img/bglb2.webp" alt=""></div>
+                <div class="img1 opa i2"><img src="img/bglb2.webp" alt=""></div>
+                <div class="img1 opa i3"><img src="img/bglb2.webp" alt=""></div>
+                <div class="img1 nor i4"><img src="img/bglb2.webp" alt=""></div>
+            </div>
+            <div class="icon2"><a href="#inicio"><img src="img/Flecha.png" alt=""></a></div>
+        </div>
+    </section>
+
+
+    <!-- Sección institucional -->
+<section id="institucional">
+    <p class="pildora4">conócenos</p>
+    <h2>nuestra esencia</h2>
+
+    <div class="bloque">
+        <img src="img/mision.jpg" alt="Misión">
+        <div class="texto">
+            <h3>Misión</h3>
+            <p>En L’Atelier Barcelona elaboramos experiencias dulces que combinan la tradición pastelera francesa con la innovación creativa, utilizando ingredientes de la más alta calidad. Nuestro propósito es despertar emociones a través de cada bocado, cuidando cada detalle desde la presentación hasta el sabor.            </p>
+        </div>
+    </div>
+
+    <div class="bloque">
+        <img src="img/vision.jpg" alt="Visión">
+        <div class="texto">
+            <h3>Visión</h3>
+            <p>Ser reconocidos como un referente en pastelería de autor en Barcelona y Europa, destacando por nuestra excelencia artesanal, creatividad en diseño y compromiso con una experiencia inolvidable para nuestros clientes.
+            </p>
+        </div>
+    </div>
+
+    <div class="bloque">
+        <img src="img/caracteristicas.jpg" alt="Características">
+        <div class="texto">
+            <h3>Características</h3>
+            <ul class="lista-caracteristicas">
+                <li><strong>Artesanía Pastelera:</strong> Cada creación es hecha a mano por expertos pasteleros, con pasión y precisión en cada detalle.</li>
+                <li><strong>Diseño Exclusivo:</strong> Fusionamos arte y gastronomía, cuidando la estética tanto como el sabor.</li>
+                <li><strong>Ingredientes Premium:</strong> Utilizamos productos naturales, frescos y de origen sostenible para garantizar calidad excepcional.</li>
+                <li><strong>Inspiración Francesa:</strong> Nuestra esencia se nutre de la elegancia y sofisticación de la pastelería francesa clásica.</li>
+                <li><strong>Experiencia Sensorial:</strong> No vendemos solo pasteles, sino momentos memorables para celebrar, regalar y disfrutar.</li>
+                <li><strong>Ubicación Boutique:</strong> Situados en el corazón de Barcelona, nuestro espacio invita a disfrutar de un ambiente cálido y refinado.</li>
+            </ul>
+        </div>
+    </div>
+
+    </div>
+</section>
+
+
+<footer class="footer">
+    <div class="footer-container">
+        <!-- Logo -->
+        <div class="footer-logo">
+            <img src="img/lablogo.png" alt="Logo L’Atelier">
+        </div>
+
+        <!-- Menú de navegación -->
+        <div class="footer-menu">
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#novedades">Nosotros</a></li>
+                <li><a href="#institucional">Misión</a></li>
+                <li><a href="#institucional">Visión</a></li>
+                <li><a href="#institucional">Características</a></li>
+                <li><a href="carta.html">Productos</a></li>
+                <li><a href="contacto.html">Contáctanos</a></li>
+            </ul>
+        </div>
+
+        <!-- Redes sociales -->
+        <div class="footer-social">
+            <a href="#" target="_blank" aria-label="Facebook">
+                <img src="img/redes/facebook.png" alt="Facebook">
+            </a>
+            <a href="#" target="_blank" aria-label="Instagram">
+                <img src="img/redes/instagram.png" alt="Instagram">
+            </a>
+            <a href="#" target="_blank" aria-label="YouTube">
+                <img src="img/redes/youtube.png" alt="YouTube">
+            </a>
+        </div>
+    </div>
+
+    <div class="footer-copy">
+        <p>© 2025 <strong>L’Atelier Barcelona</strong> | Diseñado por Elith Antury</p>
+    </div>
+</footer>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const nav = document.getElementById('navLinks');
+      const burger = document.getElementById('hamburger');
+      const links = document.querySelectorAll('.nav-links a');
+  
+      // Cambia entre ☰ y ✖
+      function updateBurgerIcon() {
+        burger.textContent = nav.classList.contains('active') ? '✖' : '☰';
+      }
+  
+      // Abrir/cerrar menú
+      burger.addEventListener('click', () => {
+        nav.classList.toggle('active');
+        updateBurgerIcon();
+      });
+  
+      // Cerrar menú 
+      links.forEach(link => {
+        link.addEventListener('click', () => {
+          nav.classList.remove('active');
+          updateBurgerIcon();
+        });
+      });
+    });
+  </script>    
+
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('navLinks');
+    const links = navLinks.querySelectorAll('a');
+
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+      hamburger.textContent = navLinks.classList.contains('active') ? '✖' : '☰';
+    });
+
+    links.forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('active');
+        hamburger.textContent = '☰';
+      });
+    });
+  });
+</script>
+
+<script>
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.hero-slider .slide');
+    const totalSlides = slides.length;
+
+    const next = document.querySelector('.hero-slider .next');
+    const prev = document.querySelector('.hero-slider .prev');
+
+    function showSlide(index) {
+        slides.forEach((slide, i) => {
+            slide.classList.remove('active');
+            if (i === index) {
+                slide.classList.add('active');
+            }
+        });
+    }
+
+    next.addEventListener('click', () => {
+        currentSlide = (currentSlide + 1) % totalSlides;
+        showSlide(currentSlide);
+    });
+
+    prev.addEventListener('click', () => {
+        currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+        showSlide(currentSlide);
+    });
+
+    setInterval(() => {
+        currentSlide = (currentSlide + 1) % totalSlides;
+        showSlide(currentSlide);
+    }, 7000); // cambia cada 7 segundos
+</script>
+
+
+</body>
+
+</html>

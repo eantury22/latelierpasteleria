@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Carta | L’Atelier Barcelona</title>
+  <link rel="stylesheet" href="css/estilo_index.css" />
+  <link rel="icon" href="img/lablogo3.png" />
+  <style>
+    body {
+      background-image: url('img/fondo_carta.jpg'); 
+      background-size: cover;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+    }
+
+    .interna-productos {
+      background-color: rgba(255, 255, 255, 0.92);
+      border-radius: 20px;
+      margin: 120px auto;
+      padding: 60px 30px;
+      max-width: 1200px;
+      box-shadow: 0 0 30px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+  
+
+<body class="carta">
+
+  <!-- NAVBAR -->
+<nav>
+    <div id="logo">
+        <a href="index.html"><img src="img/lablogo.png" alt=""></a>
+    </div>
+
+    <img src="img/menu.png" class="icon" onclick="icon()">
+
+    <ul id="lista" class="close">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="#institucional">Nosotros</a></li>
+        <li><a href="carta.html">Carta</a></li>
+        <li><a href="contacto.html">Contáctanos</a></li>
+    </ul>
+</nav>
+
+<script>
+    function icon() {
+        document.getElementById("lista").classList.toggle("close")
+        document.getElementById("lista").classList.toggle("open")
+    }
+</script> 
+
+  <!-- SECCIÓN CARTA -->
+  <section class="interna-productos">
+    <h2>Nuestra Carta</h2>
+
+    <div class="filtros-categorias">
+      <span>Pasteles personalizados</span>
+      <span>Tartas clásicas</span>
+      <span>Postres de temporada</span>
+      <span>Sin gluten y veganos</span>
+    </div>
+
+    <div class="galeria-productos">
+      <div class="producto">
+        <img src="img/productos/Producto1.png" alt="Pastel Floral" />
+        <h3>Bean to bar</h3>
+        <p>Bizcocho de chocolate negro, mousse de chocolate negro, crujiente de praliné y crema infusionada con habas de cacao.</p>
+        <span class="precio">Desde $30</span>
+        <a class="btn-pedido" href="https://wa.me/000000000" target="_blank">Haz tu pedido</a>
+      </div>
+      
+      <div class="producto">
+        <img src="img/productos/Producto2.png" alt="Pastel Floral" />
+        <h3>Cheesecake</h3>
+        <p>Mousse de queso crema, compota de fresa y crumble de almendra reconstruido con un toque de limón y chocolate blanco.</p>
+        <span class="precio">Desde $30</span>
+        <a class="btn-pedido" href="https://wa.me/000000000" target="_blank">Haz tu pedido</a>
+      </div>
+
+      <div class="producto">
+        <img src="img/productos/Producto3.png" alt="Pastel Floral" />
+        <h3>The Lemon</h3>
+        <p>Crumble de almendra, crema de limón y pimienta timut, mousse de limón, mermelada de limón y chocolate blanco. Almond crumble, lemon cream and timut pepper, lemon mousse, lemon jam and white chocolate.</p>
+        <span class="precio">Desde $30</span>
+        <a class="btn-pedido" href="https://wa.me/000000000" target="_blank">Haz tu pedido</a>
+      </div>
+
+      <div class="producto">
+        <img src="img/productos/Producto4.png" alt="Pastel Floral" />
+        <h3>Charlotte Clásica</h3>
+        <p>Bizcocho soletilla relleno de biscuit de almendra, mousse de inspiración fresa, crema de lima, mermelada de fresa.</p>
+        <span class="precio">Desde $30</span>
+        <a class="btn-pedido" href="https://wa.me/000000000" target="_blank">Haz tu pedido</a>
+      </div>
+
+      <div class="producto">
+        <img src="img/productos/Producto5.png" alt="Pastel Floral" />
+        <h3>Lemon Pie</h3>
+        <p>Masa sucrée, crema de limón, merengue italiano y ralladura de limón.</p>
+        <span class="precio">Desde $30</span>
+        <a class="btn-pedido" href="https://wa.me/000000000" target="_blank">Haz tu pedido</a>
+      </div>
+
+      <div class="producto">
+        <img src="img/productos/Producto6.png" alt="Pastel Floral" />
+        <h3>Charlotte Cítrica</h3>
+        <p>izcocho soletilla, mousse de dulcey (chocolate blanco tostado),mousse de yuzu y fruta fresca (naranja, lima y pomelo).</p>
+        <span class="precio">Desde $30</span>
+        <a class="btn-pedido" href="https://wa.me/000000000" target="_blank">Haz tu pedido</a>
+      </div>
+
+    </div>
+
+    <div class="videos-productos">
+        <h3>Conoce nuestra técnica</h3>
+        <div class="video-wrapper">
+          <iframe src="https://www.youtube.com/embed/ywPc9QmjQEk" frameborder="0" allowfullscreen></iframe>
+          <iframe src="https://www.youtube.com/embed/BNAM9LxtDTY" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>      
+  </section>
+
+  
+<footer class="footer">
+    <div class="footer-container">
+        <!-- Logo -->
+        <div class="footer-logo">
+            <img src="img/lablogo.png" alt="Logo L’Atelier">
+        </div>
+
+        <!-- Menú de navegación -->
+        <div class="footer-menu">
+          <ul>
+              <li><a href="index.html">Inicio</a></li>
+              <li><a href="#novedades">Nosotros</a></li>
+              <li><a href="#institucional">Misión</a></li>
+              <li><a href="#institucional">Visión</a></li>
+              <li><a href="#institucional">Características</a></li>
+              <li><a href="carta.html">Productos</a></li>
+              <li><a href="contacto.html">Contáctanos</a></li>
+          </ul>
+      </div>
+
+        <!-- Redes sociales -->
+        <div class="footer-social">
+            <a href="#" target="_blank" aria-label="Facebook">
+                <img src="img/redes/facebook.png" alt="Facebook">
+            </a>
+            <a href="#" target="_blank" aria-label="Instagram">
+                <img src="img/redes/instagram.png" alt="Instagram">
+            </a>
+            <a href="#" target="_blank" aria-label="YouTube">
+                <img src="img/redes/youtube.png" alt="YouTube">
+            </a>
+        </div>
+    </div>
+
+    <div class="footer-copy">
+        <p>© 2025 <strong>L’Atelier Barcelona</strong> | Diseñado por Elith Antury</p>
+    </div>
+</footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const nav = document.getElementById('navLinks');
+      const burger = document.getElementById('hamburger');
+      const links = document.querySelectorAll('.nav-links a');
+  
+      // Cambia entre ☰ y ✖
+      function updateBurgerIcon() {
+        burger.textContent = nav.classList.contains('active') ? '✖' : '☰';
+      }
+  
+      // Abrir/cerrar menú
+      burger.addEventListener('click', () => {
+        nav.classList.toggle('active');
+        updateBurgerIcon();
+      });
+  
+      // Cerrar menú al hacer clic en una opción
+      links.forEach(link => {
+        link.addEventListener('click', () => {
+          nav.classList.remove('active');
+          updateBurgerIcon();
+        });
+      });
+    });
+  </script>
+  
+
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('navLinks');
+    const links = navLinks.querySelectorAll('a');
+
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+      hamburger.textContent = navLinks.classList.contains('active') ? '✖' : '☰';
+    });
+
+    links.forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('active');
+        hamburger.textContent = '☰';
+      });
+    });
+  });
+</script>
+
+</body>
+</html>
